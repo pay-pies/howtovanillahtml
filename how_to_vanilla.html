@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How To ... Vanilla HTML</title>
+<style>
+    body {
+      background: #333;
+      padding-top: 5em;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      margin: 0;
+      font-family: monospace;
+      color: white;
+      justify-content: space-between;
+    }
+
+    .typewriter h1 {
+      color: #ffffff;
+      font-family: monospace;
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      margin: 0 auto;
+      letter-spacing: .15em;
+      animation:
+        typing 3.5s steps(30, end),
+        blink-caret .5s step-end infinite;
+    }
+
+    .small p{
+        color: white;
+        font-family: monospace;
+        text-align: left;
+        margin-top: 1em;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+    .content{
+        color: white;
+        font-family: monospace;
+        text-align: left;
+        margin-top: 1em;
+        width: 85%;
+        margin-right: 50px;
+    }
+    nav ul{
+        list-style-type: none;
+        padding: 0;
+        line-height: 1.8;
+        font-size: 14px;
+    }
+    nav li:hover{
+        background-color: rgb(106, 107, 106);
+    }
+    nav{
+        float: right;
+        border-left-style: double;
+        border-color: white;
+        padding: 20px;
+        height: 2000px;
+        padding-right: 0;
+    }
+    nav a{
+        color: white;
+        text-decoration: none;
+    }
+    img{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: orange }
+}
+    #watermark{
+        position: relative;
+        left: 580px;
+        bottom: 70px;
+        opacity: 0.8;
+        height: 70px;
+    }
+    .pixel{
+        height: 250px;
+    }
+</style>
+</head>
+<body>
+<img src="https://cloud-aded0g13q-hack-club-bot.vercel.app/0watermark.png" id="watermark">    
+<div class="typewriter">
+    <h1>How To... Vanilla HTML/CSS!</h1>
+</div>
+<div class="small">
+    <p>A walkthrough of the very basics of vanilla HTML / CSS.</p>
+</div>
+<div class="content">
+    <nav>
+        <h3>Contents</h3>
+        <ul>
+            <li><a href="#wat">What is HTML & CSS</a></li>
+            <li><a href="#size">Text tags</a></li>
+            <li><a href="#color">CSS colours</a></li>
+            <li><a href="#list">Lists</a></li>
+            <li><a href="#pic">Images</a></li>
+        </ul>
+    </nav>
+    <h2 id="wat">What is HTML & CSS?</h2>
+    <p>HTML stand for Hypertext Markup Language and CSS stands for Cascading Style Sheets. HTML is used to structure a web page and its contents. CSS is used to add style and describe the presentation of a markup language like HTML. The HTML will go in the body tag and CSS will go in the style in the head.</p>
+    <p>Vanilla HTML/CSS is the plain language without any extra plugins or fancy frameworks.</p>
+    <p>Your starting text will look like this:</p>
+    <img src="https://cloud-4w2zygkfg-hack-club-bot.vercel.app/0screenshot_2024-12-26_103032.png" class="pixel"> 
+    <p>The title tag contains your web page's title, which will appear on the browser title bar.</p>
+    <h2 id="size">Text tags.</h2>
+    <p>There are 6 'h' sizes: h1, h2, h3 ... h6. h1 being the largest and h6 being the smallest. h1 is typically used for titles, h2 for headings, h3 for sub-heading etc. There is also 'p', which is your normal paragraph text.</p>
+    <p>There are 4 text tags you need to know: br, em, u and strong. The br tag is the line break tag. You will only need one of these unlike most tags. 'em' is the italic tag, which makes your text italic (wow! i know right). 'u' is the underline tag and 'strong' is the bold text tag.</p>
+    <p>Examples of using them:</p>
+    <img src="https://cloud-1zdmynsog-hack-club-bot.vercel.app/0screenshot_2024-12-26_115846.png" class="pixel">
+    <h2 id="color">CSS colours</h2>
+    <p>You can use hex codes, rgb, rgba, hsl, hsla values or key words for colours in CSS.</p>
+    <p>If you're unsure of the values, you can always use a colour picker, like the one on google or any colour chart from online.</p>
+    <p>In CSS, you put the tag of the thing you want to 'style' in between the two style tags, indent it and put curly braces and write your code inside that.</p>
+    <p>For example:</p>
+    <img src="https://cloud-l3xu3sjja-hack-club-bot.vercel.app/0screenshot_2024-12-26_100618.png" class="pixel">
+    <h2 id="list">Lists</h2>
+    <p>There are two types of list: ordered and unordered. Ordered lists can be ordered like a numbered list, a list that has roman numerals or the alphabet etc. An unordered list is a list that is just a list with bullet points or something. For ordered you use the 'ol' tag and for each item in the list you use the 'li' tag.</p>
+    <p>Example:</p>
+    <img src="https://cloud-30zz120yr-hack-club-bot.vercel.app/0screenshot_2024-12-26_120827.png" height="175">
+    <p>For unordered lists, you do the exact same thing except instead of the ol tag, you use the ul tag. ol, ul and li stands for: ordered lists, unordered lists and list item. Who could have guessed?</p>
+    <h2 id="pic">Images</h2>
+    <p></p>
+</div>
+
+
+</body>
+</html>
