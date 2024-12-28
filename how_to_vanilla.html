@@ -59,12 +59,14 @@
         background-color: rgb(106, 107, 106);
     }
     nav{
+        position: relative;
         float: right;
         border-left-style: double;
         border-color: white;
         padding: 20px;
-        height: 2000px;
+        height: 7530px;
         padding-right: 0;
+        
     }
     nav a{
         color: white;
@@ -73,6 +75,9 @@
     img{
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+    a{
+        color:white;
     }
 
 @keyframes blink-caret {
@@ -89,6 +94,35 @@
     .pixel{
         height: 250px;
     }
+    .warn{
+        font-size: 16px;
+        color: orange;
+        font-weight: bold;
+    }
+    .tags{
+        color: orange;
+    }
+    ul{
+        list-style-type: circle;
+    } 
+    .smalla{
+        color: orange;
+        margin-left: 15px;
+        font-size: 12px;
+    }
+    #sitelist a{
+        text-decoration: none;
+    }
+    #end{
+        margin-top:40px;
+    }
+    #src{
+        margin-top: 20px;
+    }
+    #sign_off{
+        margin-bottom: 20px;
+    }
+
 </style>
 </head>
 <body>
@@ -105,9 +139,27 @@
         <ul>
             <li><a href="#wat">What is HTML & CSS</a></li>
             <li><a href="#size">Text tags</a></li>
-            <li><a href="#color">CSS colours</a></li>
             <li><a href="#list">Lists</a></li>
+            <ul>
+                <li><a href="#nested" class="smalla">Nested Lists</a></li>
+                <li><a href="#desclists" class="smalla">Description Lists</a></li>
+            </ul>
             <li><a href="#pic">Images</a></li>
+            <li><a href="#color">CSS colours</a></li>
+            <li><a href="#idclass">Ids and Classes</a></li>
+            <li><a href="#link">Links</a></li>
+            <li><a href="#table">Tables</a></li>
+            <li><a href="#comm">Comments</a></li>
+            <li><a href="#cssprops">More CSS Properties</a></li>
+            <li><a href="#groups">Grouping elements</a></li>
+            <li><a href="#box">The Box Model</a></li>
+            <li><a href="#pos">CSS Position</a></li>
+            <li><a href="#layout">Webpage Layouts</a></li>
+                <ul>
+                    <li><a href="#float" class="smalla">Floating properties</a></li>
+                    <li><a href="#flex" class="smalla">Flexbox</a></li>
+                </ul>
+            <li><a href="#sites">Useful Sites to Help</a></li>
         </ul>
     </nav>
     <h2 id="wat">What is HTML & CSS?</h2>
@@ -116,26 +168,160 @@
     <p>Your starting text will look like this:</p>
     <img src="https://cloud-4w2zygkfg-hack-club-bot.vercel.app/0screenshot_2024-12-26_103032.png" class="pixel"> 
     <p>The title tag contains your web page's title, which will appear on the browser title bar.</p>
-    <h2 id="size">Text tags.</h2>
+    
+    <h2 id="size">Text tags</h2>
     <p>There are 6 'h' sizes: h1, h2, h3 ... h6. h1 being the largest and h6 being the smallest. h1 is typically used for titles, h2 for headings, h3 for sub-heading etc. There is also 'p', which is your normal paragraph text.</p>
-    <p>There are 4 text tags you need to know: br, em, u and strong. The br tag is the line break tag. You will only need one of these unlike most tags. 'em' is the italic tag, which makes your text italic (wow! i know right). 'u' is the underline tag and 'strong' is the bold text tag.</p>
+    <p>There are 5 text tags you need to know: br, em, u, b and strong. The br tag is the line break tag. You will only need one of these unlike most tags. 'em' is the italic tag, which makes your text italic (wow! i know right). 'u' is the underline tag and b AND strong are bold text tags I guess. The strong tag implies that that piece of text is important but the b tag has no significant importance and is only for visuals.</p>
     <p>Examples of using them:</p>
     <img src="https://cloud-1zdmynsog-hack-club-bot.vercel.app/0screenshot_2024-12-26_115846.png" class="pixel">
+    
+    <h2 id="list">Lists</h2>
+    <p>There are two types of list: ordered and unordered. Ordered lists can be ordered like a numbered list, a list that has roman numerals or the alphabet etc. An unordered list is a list that is just a list with bullet points or something. For ordered you use the 'ol' tag and for each item in the list you use the 'li' tag.</p>
+    <p>Example:</p>
+    <img src="https://cloud-30zz120yr-hack-club-bot.vercel.app/0screenshot_2024-12-26_120827.png" height="175">
+    <p>For unordered lists, you do the exact same thing except instead of the ol tag, you use the ul tag. ol, ul and li stands for: ordered lists, unordered lists and list item. Who could have guessed?</p>
+
+    <h3 id="nested">Nested Lists</h3>
+    <p>Lists can also be nested by putting another ol/ul tag under the item you want to be nested under (indent!) and use li for the nested items.</p>
+    <p>Nested lists example:</p>
+    <img src="https://cloud-cjo38cc27-hack-club-bot.vercel.app/0nestedlists.png" class="pixel">
+    
+    <h3 id="desclists">Description Lists</h3>
+    <p>You can also have description lists, which are lists which have descriptions of the items. For these you use the dl tag, then the dt tag for the item and the dd tag for the description.</p>
+    <p>Description lists example:</p>
+    <img src="https://cloud-bwhfk744g-hack-club-bot.vercel.app/0desclists.png" height="200">
+
+    <h2 id="pic">Images</h2>
+    <p>For images, you use the 'img' tag. You will only need one of these, like the br tag. Inside the img tag, type in 'src=""' (stands for source) and then inside the quotation marks, put in the link to the image.</p>
+    <p>Within the img tag you can adjust the height and width values of the image. For these, you just type 'height=" [value] "' or 'width=" [value] ' inside.</p>
+    <p>Example:</p>
+    <img src="https://cloud-43rcrddt9-hack-club-bot.vercel.app/0imagetag.png" class="pixel">
+
     <h2 id="color">CSS colours</h2>
     <p>You can use hex codes, rgb, rgba, hsl, hsla values or key words for colours in CSS.</p>
     <p>If you're unsure of the values, you can always use a colour picker, like the one on google or any colour chart from online.</p>
     <p>In CSS, you put the tag of the thing you want to 'style' in between the two style tags, indent it and put curly braces and write your code inside that.</p>
     <p>For example:</p>
     <img src="https://cloud-l3xu3sjja-hack-club-bot.vercel.app/0screenshot_2024-12-26_100618.png" class="pixel">
-    <h2 id="list">Lists</h2>
-    <p>There are two types of list: ordered and unordered. Ordered lists can be ordered like a numbered list, a list that has roman numerals or the alphabet etc. An unordered list is a list that is just a list with bullet points or something. For ordered you use the 'ol' tag and for each item in the list you use the 'li' tag.</p>
-    <p>Example:</p>
-    <img src="https://cloud-30zz120yr-hack-club-bot.vercel.app/0screenshot_2024-12-26_120827.png" height="175">
-    <p>For unordered lists, you do the exact same thing except instead of the ol tag, you use the ul tag. ol, ul and li stands for: ordered lists, unordered lists and list item. Who could have guessed?</p>
-    <h2 id="pic">Images</h2>
-    <p></p>
-</div>
+    
+    <h2 id="idclass">Ids & Classes</h2>
+    <p>If you wanted to style a certain piece text/image or something or group of things individually, you could give it an id or class. The difference between them is that an id can only be used by one element and a class can be used by multiple elements.</p>
+    <p>To set an id or class to something, go inside the tag and type 'id=""' or 'class=""' and type in the id/class name inside the quotation marks.</p>
+    <p>The CSS syntax for ids and classes are different. For ids you put an hashtag '#' and then the name and for classes you put a dot '.' and the name.</p>
+    <p>Example of HTML:</p>
+    <img src="https://cloud-ggumsxxoo-hack-club-bot.vercel.app/0htmlidclass.png" height="300">
+    <p>Example of CSS:</p>
+    <img src="https://cloud-ggumsxxoo-hack-club-bot.vercel.app/1cssidclass.png" height="175">
 
+    <h2 id="link">Links</h2>
+    <p>You can have internal links and external links. For external links, you will use the 'a' tag. Inside the a tag you type in 'href=" [url] "' and copy the url into the space where it says url.</p>
+    <p>You may notice links are always blue or purple and underlined. You can change the color with the CSS from before, but to remove the underline you can use the text-decoration property.</p>
+    <p>In CSS, set text-decoration to none and the underline will vanish. I don't think you will need an example for this as it is quite straightforward I think.</p>
+    <p>For internal links, you can add an id to the tag you want to go to when you press the link. Also using the a tag, you insert the id name with a hashtag '#' in front instead of the link inside the 'href=""'.</p>
+    <p>By the way, href stands for hypertext reference :&#41;.</p>
+    <p>There are five states of a link: link (default), hover, visited, active (when clicked), focus (when clicked/given focus).</p>
+    <p>We can change the properties when a list is in one of these states by typing 'a: [state] ' and then the CSS.</p>
+    <p>Example:</p>
+    <img src="https://cloud-gx67ovnq1-hack-club-bot.vercel.app/0linkstatescss.png" class="pixel">
+
+
+    <h2 id="table">Tables</h2>
+    <p class="warn">WARNING: This uses A LOT of tags!</p>
+    <p>First of all, you have the <span class="tags">table</span> tag. Then you have <span class="tags">thead</span> (table head), which groups the table headers together. To group cells in a row, you use the <span class="tags">tr (table row)</span> tag and for the headers, you use the <span class="tags">th</span> (table header cell) tag.</p>
+    <p>Next, you have the <span class="tags">tbody</span> (table body) tag. You still use the <span class="tags">tr</span> tag to create each row and for the individual cells that contain information, you use the <span class="tags">td</span> (table data cell) tag, which will go under the headers you have created.</p>
+    <p>Example:</p>
+    <img src="https://cloud-l3ld553au-hack-club-bot.vercel.app/0tables.png" height="350">
+    <p>This still scares me :P</p>
+
+    <h2 id="comm">Comments</h2>
+    <p>In a lot of languages, we are able to make comments. In HTML, we can use them to give ourselves/other people who are looking at our code extra information that you might not wan to show on the actual web page. In other cases, you might be experiments and wanting to comment out a line or two to see what happens.</p>
+    <p>The syntax for comments is '&#60;! -- [comment] --&#62;'.</p>
+
+    <h2 id="cssprops">More CSS properties</h2>
+    <p>To change the font of the text, you use the font-family property. There are 5 types of fonts in HTML: sans-serif, serif, monospace, cursive and fantasy. Examples of each: verdana, arial; times new roman, georgia; courier new, lucida; brush script mt, bradley hand and luminari.</p>
+    <p class="warn">MAKE SURE TO HAVE QUOTES AROUND THE FONT NAME</p>
+    <p>You can change the size of the text with the font-size property. After the semi-colon, type in the size in pixels with the shortened version 'px'.</p>
+    <p>Some other properties include: text-decoration, text-align, border, font-style, line-height (line spacing), font-weight (light, normal, bold), width, height, overflow.</p>
+    <p>There are too many so you can find them at <a href="https://www.w3schools.com/css/default.asp">w3schools</a></p>
+
+    <h2 id="groups">Grouping elements</h2>
+    <p>There are two tags you need to know: div and span. Div is for styling a big block of stuff and span is mainly inline (e.g. highlighting a word within a paragraph).</p>
+    <p>You can just style them as div and span or give them classes/ids.</p>
+
+    <h2 id="box">The Box Model</h2>
+    <p>This is the box model, consisting of the actual content, the padding, the border and the margin.</p>
+    <img src="https://miro.medium.com/v2/resize:fit:380/1*HceLOtJ6RZ3FoZB-fuKVUQ.png" height="200">
+    <ul>
+        <li>The content is your text and images.</li>
+        <li>The padding is the transparent area cleared around the content. This controls the space within an element.</li>
+        <li>The border is, well a border that goes around the content and padding.</li>
+        <li>The margin is the transparent area cleared around the border that seperates it from other elements.</li>
+    </ul>
+    <p>We can modify the padding, border and margin using CSS with the padding, border and margin properties. If you wanted them on a specific side then you could use the padding-left/right/top/bottom, border-left/right/top/bottom etc. </p>
+    <p>For the values of the properties we use pixels, you just type in the number and 'px'.</p>
+    
+    <h2 id="pos">CSS Position</h2>
+    <p>The position property has 5 possible values: static (default), absolute, relative, fixed and sticky.</p>
+    <p>What they are:</p>
+    <ul>
+        <li>static - the elements are rendered in order, as they appear in a document.</li>
+        <li>absolute - positioned relative to the first ancestor element (like how body is the ancestor element of everything in it)</li>
+        <li>relative - positioned relative to its normal position</li>
+        <li>fixed - positioned relative to the browser window</li>
+        <li>sticky - positioned based on the user's scrolling position</li>
+    </ul>
+    <p>There is also initial and inherit. Initial resets it to its normal position and inherit makes the element inherit the property from its parent element.</p>
+    <p>There are right, left, top and bottom properties, which contain how many extra pixels you want to the right/light/top/bottom of the element.</p>
+
+    
+    <h2 id="layout">Webpage Layouts</h2>
+    <p>Webpages often have newspaper-like layouts with multiple columns like this:</p>
+    <img src="https://www.w3schools.com/html/img_sem_elements.gif" class="pixel">
+    <p>This diagram includes some of the layout elements you could have. These include:</p>
+    <ul>
+        <li>header tag - header for a section</li>
+        <li>nav tag - a section of navigation links</li>
+        <li>section tag - a section :&#41;</li>
+        <li>article tag - independent content</li>
+        <li>aside tag - content aside from the main content (like a sidebar)</li>
+        <li>footer tag - a footer at the bottom</li>
+        <li>details tag - additional details that the user can open and close</li>
+        <li>summary tag - a heading for the details</li>
+    </ul>    
+
+    <h3 id="float">Floating properties</h3>
+    <p>The float property has two possible values: left and right. This will the make the element 'float' in that direction.</p>
+    <p>The clear property controls the flow next to floated elements. The possible values are: left, right, both, initial and inherit. 'both' refers to both left and right. left and right are pretty self-explanatory. We've mentioned intial and inherit before but I'll explain them again in case you've forgotten. Initial resets the property to its original value and inherit makes the element 'inherit' the property from its parent element.</p>
+    
+    <h3 id="flex">Flexbox</h3>
+    <p>The flexbox (flexible box layout) a layout method to organise items into rows and columns. A flexbox always has a flex container with the flex items inside. The container will be created using a div class.</p>
+    <p>The properties used for the flex container are: flex-direction, flex-wrap, flex-flow, justify-content, align-items and align-content.</p>
+    <p>The flex-direction can have one of these 4 values: row (<span class="tags">default/horizontally</span>), column (<span class="tags">vertically</span>), row-reverse (<span class="tags">right to left</span>), column-reverse (<span class="tags">bottom to top</span>).</p>
+    <p>The flex-wrap can have one of these values: nowrap(default), wrap(will wrap if necessary), wrap-reverse(same as wrap but in reverse). </p>
+    <p>The flex flow property is the short-hand version of changing the flex-direction and flex-wrap properties.</p>
+    <p>The justify-content property can have one of these values: center, flex-start (<span class="tags">default</span>), flex-end (<span class="tags">places at end of container</span>), space-around (<span class="tags">places with space around each item</span>), space-between (<span class="tags">places with space between them</span>), space-evenly (<span class="tags">places items with equal space around them</span>).</p>
+    <p>The align-items property can have one of these: center, flex-start (<span class="tags">places at top</span>), flex-end (<span class="tags">places at bottom</span>), stretch (<span class="tags">same as normal</span>), baseline (<span class="tags">places at baseline</span>), normal.</p> 
+    <p>The align-content property has the same possible values but instead of aligning the items, it aligns the flex lines.</p>
+    
+    <p>The display property has quite a few possible values so you can look at them over at <a href="https://www.w3schools.com/cssref/pr_class_display.php">w3schools</a> (again).</p>
+
+    <h2 id="sites">Useful Sites to Help</h2>
+    <p>Here are a few to help you if you are stuck with something.</p>
+    <ul id="sitelist">
+        <li><a href="https://www.w3schools.com/html/default.asp">w3schools html</a></li>
+        <li><a href="https://www.w3schools.com/css/default.asp">w3schools css</a></li>
+        <li><a href="https://www.khanacademy.org/computing/computer-programming/html-css">khanacademy html & css course (i followed this)</a></li>
+        <li><a href="https://www.codecademy.com/resources/docs/html">codecademy html</a></li>
+        <li><a href="https://www.codecademy.com/resources/docs/css">codecademy css</a></li>
+        <li><a href="https://www.youtube.com/watch?v=mU6anWqZJcc">freecodecamp course on youtube (it is very long - 11 hours)</a></li>
+        <li><a href="https://www.thoughtco.com/html-code-for-common-symbols-and-signs-2654021">HTML common symbols codes</a></li>
+        <l><a href="https://www.toptal.com/designers/htmlarrows/symbols/">HTML extra symbols</a></l>
+        <li>Anything else you find on Youtube or anything that helps!</li>
+    </ul>
+    <h1 id="end">You Have Reached The End.</h3>
+    <p id="src">&#9881; Source Code: <a href="https://github.com/pay-pies/howtovanillahtml">Github Repository</a></p>
+    <p id="sign_off">- @pay-pies 2024</p>
+</div>
 
 </body>
 </html>
