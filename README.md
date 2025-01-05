@@ -14,6 +14,10 @@ Time spent: 9 hours 24 mins 🟢🟡 ->🟥<- (least time-consuming to most)
 
 Some of the links may not work in neetocode so you can right click and click open link in new tab or something.
 
+## Colour Palette (Extra)
+
+Orange (#ffa500), white (#ffffff), dark grey (#333333)
+
 ## Credits:
 
 - Most of the typewriter animation code: https://css-tricks.com/snippets/css/typewriter-effect/
