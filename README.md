@@ -8,7 +8,7 @@ I have used Vanilla HTML ( with CSS inside the style element ), edited in Micros
 
 Click on the links on the sidebar to navigate the page and read through the information. At the very bottom, there are a few links to help you out if you are stuck. 
 
-Time spent: 9 hours 24 mins 🟢🟡 ->🟥<- (least time-consuming to most)
+Time spent: 9 hours 44 mins 🟢🟡 ->🟥<- (least time-consuming to most) - comparing to my other projects
 
 ### Note
 
