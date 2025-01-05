@@ -22,6 +22,7 @@ Orange (#ffa500), white (#ffffff), dark grey (#333333)
 
 - Most of the typewriter animation code: https://css-tricks.com/snippets/css/typewriter-effect/
 - The rest of the code: me
-- The little watermark thing in the corner: i used this font https://www.fontspace.com/casual-tossed-font-f81 from fontspace for the text and edited this image https://i.pinimg.com/736x/43/ed/66/43ed6691c8fe72d724156ee3949f69c6.jpg with it
+- The little watermark thing in the corner: I used this font https://www.fontspace.com/casual-tossed-font-f81 from fontspace for the text and edited this image https://i.pinimg.com/736x/43/ed/66/43ed6691c8fe72d724156ee3949f69c6.jpg with it on pixlr.e (https://pixlr.com/editor/)
+- Favicon: Also made on pixlr.e
 
 
