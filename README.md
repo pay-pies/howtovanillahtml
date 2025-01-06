@@ -1,6 +1,6 @@
 # How To Vanilla HTML & CSS ( A Guide )
 
-This is a site which is a walkthrough through the basics of vanilla HTML & CSS. It can be accessed here https://pay-pies.neetocode.com/site/qingrui-xie/01JFXA9VW3TAXP1466STQS8ESY and has been hosted on neetocode.
+This is a site which is a walkthrough through the basics of vanilla HTML & CSS. It can be accessed here https://howtovanillahtml.vercel.app/ and has been hosted on vercel.
 
 I have used Vanilla HTML ( with CSS inside the style element ), edited in Microsoft VS Code (Visual Studio Code).
 
@@ -8,15 +8,11 @@ I have used Vanilla HTML ( with CSS inside the style element ), edited in Micros
 
 Click on the links on the sidebar to navigate the page and read through the information. At the very bottom, there are a few links to help you out if you are stuck. 
 
-Time spent: 9 hours 44 mins 🟢🟡 ->🟥<- (least time-consuming to most) - comparing to my other projects
-
-### Note
-
-Some of the links may not work in neetocode so you can right click and click open link in new tab or something.
+Time spent: 10 hours 15 mins 🟢🟡->🟥<- (least time-consuming to most) - comparing to my other projects
 
 ## Colour Palette (Extra)
 
-Orange (#ffa500), white (#ffffff), dark grey (#333333)
+Orange (#ffa500), white (#ffffff), dark grey (#333333).
 
 ## Credits:
 
@@ -25,4 +21,4 @@ Orange (#ffa500), white (#ffffff), dark grey (#333333)
 - The little watermark thing in the corner: I used this font https://www.fontspace.com/casual-tossed-font-f81 from fontspace for the text and edited this image https://i.pinimg.com/736x/43/ed/66/43ed6691c8fe72d724156ee3949f69c6.jpg with it on pixlr.e (https://pixlr.com/editor/)
 - Favicon: Also made on pixlr.e
 
-
+First time using Vercel 🥳!
