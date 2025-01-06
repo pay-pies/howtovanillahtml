@@ -14,6 +14,8 @@ Time spent: 10 hours 15 mins 🟢🟡->🟥<- (least time-consuming to most) - c
 
 Orange (#ffa500), white (#ffffff), dark grey (#333333).
 
+![](https://cloud-r8i9i316b-hack-club-bot.vercel.app/0colourpalette.png)
+
 ## Credits:
 
 - Most of the typewriter animation code: https://css-tricks.com/snippets/css/typewriter-effect/
