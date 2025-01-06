@@ -10,6 +10,10 @@ Click on the links on the sidebar to navigate the page and read through the info
 
 Time spent: 10 hours 15 mins 🟢🟡->🟥<- (least time-consuming to most) - comparing to my other projects
 
+## Screenshot:
+
+![](https://cloud-ljd7s7dwc-hack-club-bot.vercel.app/0screenshot.png)
+
 ## Colour Palette (Extra)
 
 Orange (#ffa500), white (#ffffff), dark grey (#333333).
